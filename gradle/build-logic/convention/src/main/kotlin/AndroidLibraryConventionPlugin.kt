@@ -1,5 +1,6 @@
 import com.android.build.api.dsl.LibraryExtension
 import com.gregkluska.gradle.configureAndroidCommon
+import com.gregkluska.gradle.configureSpotless
 import com.gregkluska.gradle.libs
 import org.gradle.api.Plugin
 import org.gradle.api.Project
@@ -16,6 +17,8 @@ class AndroidLibraryConventionPlugin : Plugin<Project> {
         extensions.configure<LibraryExtension> {
             configureAndroidCommon(this)
         }
+
+        configureSpotless()
     }
 
 }

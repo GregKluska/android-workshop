@@ -1,4 +1,5 @@
 import com.gregkluska.gradle.configureKotlinJvm
+import com.gregkluska.gradle.configureSpotless
 import com.gregkluska.gradle.libs
 import org.gradle.api.Plugin
 import org.gradle.api.Project
@@ -10,6 +11,7 @@ class JvmLibraryConventionPlugin : Plugin<Project> {
                 apply(libs.plugins.jetbrains.kotlin.jvm.get().pluginId)
             }
             configureKotlinJvm()
+            configureSpotless()
         }
     }
 }

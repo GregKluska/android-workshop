@@ -11,32 +11,38 @@ java {
 dependencies {
     compileOnly(libs.android.gradlePlugin)
     compileOnly(libs.kotlin.gradlePlugin)
+    compileOnly(libs.spotless.gradlePlugin)
     compileOnly(files(libs.javaClass.superclass.protectionDomain.codeSource.location))
 }
 
 gradlePlugin {
     plugins {
-        create("AndroidApplicationConventionPlugin") {
+        register("root") {
+            id = "com.gregkluska.root"
+            implementationClass = "RootConventionPlugin"
+        }
+
+        register("AndroidApplicationConventionPlugin") {
             id = "com.gregkluska.android.application"
             implementationClass = "AndroidApplicationConventionPlugin"
         }
 
-        create("AndroidApplicationComposeConventionPlugin") {
+        register("AndroidApplicationComposeConventionPlugin") {
             id = "com.gregkluska.android.application.compose"
             implementationClass = "AndroidApplicationComposeConventionPlugin"
         }
 
-        create("AndroidLibraryConventionPlugin") {
+        register("AndroidLibraryConventionPlugin") {
             id = "com.gregkluska.android.library"
             implementationClass = "AndroidLibraryConventionPlugin"
         }
 
-        create("AndroidLibraryComposeConventionPlugin") {
+        register("AndroidLibraryComposeConventionPlugin") {
             id = "com.gregkluska.android.library.compose"
             implementationClass = "AndroidLibraryComposeConventionPlugin"
         }
 
-        create("JvmLibraryConventionPlugin") {
+        register("JvmLibraryConventionPlugin") {
             id = "com.gregkluska.jvm.library"
             implementationClass = "JvmLibraryConventionPlugin"
         }

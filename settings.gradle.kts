@@ -23,4 +23,3 @@ dependencyResolutionManagement {
 
 rootProject.name = "Android Workshop"
 include(":app")
- 
