@@ -1,9 +1,10 @@
-import com.gregkluska.gradle.configureSpotless
+import com.gregkluska.gradle.configureDetekt
 import org.gradle.api.Plugin
 import org.gradle.api.Project
 
 class RootConventionPlugin : Plugin<Project> {
     override fun apply(target: Project) = with(target) {
-        configureSpotless()
+//        configureSpotless()
+        configureDetekt()
     }
 }

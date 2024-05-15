@@ -1,0 +1,28 @@
+config:
+  validation: true
+  warningsAsErrors: false
+  excludes: ''
+
+complexity:
+  LongParameterList:
+    functionThreshold: 8
+    ignoreDefaultParameters: true
+  TooManyFunctions:
+    ignoreAnnotated:
+      - Preview
+
+naming:
+  FunctionNaming:
+    ignoreAnnotated:
+      - Composable
+      - Preview
+  TopLevelPropertyNaming:
+    constantPattern: '[A-Z][A-Za-z0-9]*'
+
+style:
+  MagicNumber:
+    ignorePropertyDeclaration: true
+    ignoreCompanionObjectPropertyDeclaration: true
+  UnusedPrivateMember:
+    ignoreAnnotated:
+      - Preview

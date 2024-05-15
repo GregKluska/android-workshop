@@ -19,11 +19,15 @@ fun Project.configureSpotless() {
         kotlin {
             target("src/**/*.kt")
             ktlint(ktlintVersion)
+            trimTrailingWhitespace()
+            endWithNewline()
         }
 
         kotlinGradle {
             target("*.kts")
             ktlint(ktlintVersion)
+            trimTrailingWhitespace()
+            endWithNewline()
         }
     }
 }
