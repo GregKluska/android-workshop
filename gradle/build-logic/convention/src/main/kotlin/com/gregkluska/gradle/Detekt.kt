@@ -16,15 +16,12 @@ internal fun Project.configureDetekt() {
         toolVersion = libs.versions.detekt.get()
         config.setFrom("$rootDir/detekt.yml")
         buildUponDefaultConfig = true
+        autoCorrect = true
     }
 
     tasks.named<Detekt>("detekt") {
         reports {
-            xml.required.set(true)
             html.required.set(true)
-            txt.required.set(true)
-            sarif.required.set(true)
-            md.required.set(true)
         }
     }
 
