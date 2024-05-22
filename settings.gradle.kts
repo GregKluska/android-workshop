@@ -23,3 +23,5 @@ dependencyResolutionManagement {
 
 rootProject.name = "Android Workshop"
 include(":app")
+include(":ui:pedro")
+include(":common:ui")
