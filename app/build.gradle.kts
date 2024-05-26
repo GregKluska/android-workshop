@@ -1,8 +1,7 @@
-import com.android.utils.TraceUtils.simpleId
-
 plugins {
     id(libs.plugins.workshop.android.application.asProvider().get().pluginId)
     id(libs.plugins.workshop.android.application.compose.get().pluginId)
+    id(libs.plugins.workshop.android.hilt.get().pluginId)
 }
 
 android {
