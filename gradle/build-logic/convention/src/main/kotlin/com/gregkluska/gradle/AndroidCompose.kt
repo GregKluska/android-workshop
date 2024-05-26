@@ -24,5 +24,7 @@ internal fun Project.configureAndroidCompose(
 
         add("implementation", libs.androidx.ui.tooling.preview)
         add("debugImplementation", libs.androidx.ui.tooling)
+
+        add("implementation", libs.bundles.compose.base)
     }
 }

@@ -1,6 +1,8 @@
+import com.android.utils.TraceUtils.simpleId
+
 plugins {
-    id("com.gregkluska.android.application")
-    id("com.gregkluska.android.application.compose")
+    id(libs.plugins.workshop.android.application.asProvider().get().pluginId)
+    id(libs.plugins.workshop.android.application.compose.get().pluginId)
 }
 
 android {
@@ -29,6 +31,9 @@ android {
 }
 
 dependencies {
+    implementation(projects.common.ui)
+    implementation(projects.ui.pedro)
+
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.lifecycle.runtime.ktx)
     implementation(libs.androidx.activity.compose)

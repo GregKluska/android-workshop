@@ -21,7 +21,9 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "Android Workshop"
+rootProject.name = "android-workshop"
+
+enableFeaturePreview("TYPESAFE_PROJECT_ACCESSORS")
 include(":app")
 include(":ui:pedro")
 include(":common:ui")

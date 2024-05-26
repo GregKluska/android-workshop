@@ -2,9 +2,11 @@ plugins {
     `kotlin-dsl`
 }
 
+group = "com.gregkluska.gradle.buildlogic"
+
 java {
     toolchain {
-        languageVersion.set(JavaLanguageVersion.of(11))
+        languageVersion.set(JavaLanguageVersion.of(17))
     }
 }
 
@@ -16,35 +18,47 @@ dependencies {
     compileOnly(files(libs.javaClass.superclass.protectionDomain.codeSource.location))
 }
 
+tasks {
+    validatePlugins {
+        enableStricterValidation = true
+        failOnWarning = true
+    }
+}
+
 gradlePlugin {
     plugins {
-        register("root") {
-            id = "com.gregkluska.root"
+        register("RootConventionPlugin") {
+            id = "workshop.gradle.root"
             implementationClass = "RootConventionPlugin"
         }
 
         register("AndroidApplicationConventionPlugin") {
-            id = "com.gregkluska.android.application"
+            id = "workshop.gradle.android.application"
             implementationClass = "AndroidApplicationConventionPlugin"
         }
 
         register("AndroidApplicationComposeConventionPlugin") {
-            id = "com.gregkluska.android.application.compose"
+            id = "workshop.gradle.android.application.compose"
             implementationClass = "AndroidApplicationComposeConventionPlugin"
         }
 
         register("AndroidLibraryConventionPlugin") {
-            id = "com.gregkluska.android.library"
+            id = "workshop.gradle.android.library"
             implementationClass = "AndroidLibraryConventionPlugin"
         }
 
         register("AndroidLibraryComposeConventionPlugin") {
-            id = "com.gregkluska.android.library.compose"
+            id = "workshop.gradle.android.library.compose"
             implementationClass = "AndroidLibraryComposeConventionPlugin"
         }
 
+        register("AndroidHiltConventionPlugin") {
+            id = "workshop.gradle.android.hilt"
+            implementationClass = "AndroidHiltConventionPlugin"
+        }
+
         register("JvmLibraryConventionPlugin") {
-            id = "com.gregkluska.jvm.library"
+            id = "workshop.gradle.jvm.library"
             implementationClass = "JvmLibraryConventionPlugin"
         }
     }

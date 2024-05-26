@@ -1,6 +1,6 @@
 plugins {
-    id("com.gregkluska.android.library")
-    id("com.gregkluska.android.library.compose")
+    id(libs.plugins.workshop.android.library.asProvider().get().pluginId)
+    id(libs.plugins.workshop.android.library.compose.get().pluginId)
 }
 
 android {
