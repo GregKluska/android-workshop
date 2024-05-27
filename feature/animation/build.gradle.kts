@@ -1,6 +1,7 @@
 plugins {
     id(libs.plugins.workshop.android.library.asProvider().get().pluginId)
     id(libs.plugins.workshop.android.library.compose.get().pluginId)
+    id(libs.plugins.workshop.android.hilt.get().pluginId)
 }
 
 android {
@@ -22,6 +23,10 @@ android {
 }
 
 dependencies {
+    implementation(projects.common.ui)
+
+    implementation(libs.bundles.compose.navigation)
+
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
