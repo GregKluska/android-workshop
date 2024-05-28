@@ -10,6 +10,7 @@ class AndroidLibraryComposeConventionPlugin : Plugin<Project> {
     override fun apply(target: Project) = with(target) {
         with(pluginManager) {
             apply(libs.plugins.android.library.get().pluginId)
+            apply(libs.plugins.compose.compiler.get().pluginId)
         }
 
         extensions.configure<LibraryExtension> {

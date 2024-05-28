@@ -11,10 +11,6 @@ internal fun Project.configureAndroidCompose(
         buildFeatures {
             compose = true
         }
-
-        composeOptions {
-            kotlinCompilerExtensionVersion = libs.versions.compose.compiler.get().toString()
-        }
     }
 
     dependencies {

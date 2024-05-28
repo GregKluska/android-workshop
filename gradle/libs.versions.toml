@@ -1,6 +1,6 @@
 [versions]
 agp = "8.4.1"
-kotlin = "1.9.24"
+kotlin = "2.0.0"
 ktlint = "1.2.1"
 coreKtx = "1.13.1"
 junit = "4.13.2"
@@ -8,7 +8,6 @@ junitVersion = "1.1.5"
 espressoCore = "3.5.1"
 lifecycleRuntimeKtx = "2.8.0"
 activityCompose = "1.9.0"
-compose-compiler = "1.5.14"
 navigation-compose = "2.7.7"
 hilt-navigation-compose = "1.2.0"
 compose-bom = "2024.05.00"
@@ -17,7 +16,7 @@ detekt = "1.23.6"
 appcompat = "1.6.1"
 material = "1.12.0"
 hilt = "2.51"
-ksp = "1.9.24-1.0.20"
+ksp = "2.0.0-1.0.21"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
@@ -61,6 +60,7 @@ spotless = { id = "com.diffplug.spotless", version.ref = "spotless" }
 detekt = { id = "io.gitlab.arturbosch.detekt", version.ref = "detekt" }
 hilt = { id = "com.google.dagger.hilt.android", version.ref = "hilt" }
 ksp = { id = "com.google.devtools.ksp", version.ref = "ksp" }
+compose-compiler = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }
 
 # Plugins defined by this project
 # GK: Does not work with aliases, have to use id and .get().id otherwise getting:
