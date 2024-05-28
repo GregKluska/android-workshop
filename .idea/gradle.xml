@@ -28,8 +28,6 @@
             <option value="$PROJECT_DIR$/feature/animation" />
             <option value="$PROJECT_DIR$/gradle/build-logic" />
             <option value="$PROJECT_DIR$/gradle/build-logic/convention" />
-            <option value="$PROJECT_DIR$/ui" />
-            <option value="$PROJECT_DIR$/ui/pedro" />
           </set>
         </option>
         <option name="resolveExternalAnnotations" value="false" />

@@ -24,7 +24,12 @@ dependencyResolutionManagement {
 rootProject.name = "android-workshop"
 
 enableFeaturePreview("TYPESAFE_PROJECT_ACCESSORS")
+
 include(":app")
-include(":ui:pedro")
-include(":common:ui")
+
+// Features
 include(":feature:animation")
+
+// Common
+include(":common:ui")
+
