@@ -11,6 +11,7 @@
                 <projects>
                   <project path="$PROJECT_DIR$/gradle/build-logic" />
                   <project path="$PROJECT_DIR$/gradle/build-logic/convention" />
+                  <project path="$PROJECT_DIR$/gradle/build-logic/reporter" />
                 </projects>
               </build>
             </builds>
@@ -28,6 +29,7 @@
             <option value="$PROJECT_DIR$/feature/animation" />
             <option value="$PROJECT_DIR$/gradle/build-logic" />
             <option value="$PROJECT_DIR$/gradle/build-logic/convention" />
+            <option value="$PROJECT_DIR$/gradle/build-logic/reporter" />
           </set>
         </option>
         <option name="resolveExternalAnnotations" value="false" />
