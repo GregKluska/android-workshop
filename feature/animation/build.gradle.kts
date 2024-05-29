@@ -25,6 +25,7 @@ android {
 dependencies {
     implementation(projects.common.ui)
 
+    implementation(libs.androidx.appcompat)
     implementation(libs.bundles.compose.navigation)
 
     testImplementation(libs.junit)

@@ -15,7 +15,7 @@ spotless = "6.25.0"
 detekt = "1.23.6"
 appcompat = "1.6.1"
 material = "1.12.0"
-hilt = "2.51"
+hilt = "2.51.1"
 ksp = "2.0.0-1.0.21"
 
 [libraries]
@@ -72,6 +72,7 @@ workshop-android-library = { id = "workshop.gradle.android.library", version = "
 workshop-android-library-compose = { id = "workshop.gradle.android.library.compose", version = "unspecified" }
 workshop-android-hilt = { id = "workshop.gradle.android.hilt", version = "unspecified" }
 workshop-jvm-library = { id = "workshop.gradle.jvm.library", version = "unspecified" }
+workshop-buildtimelogger = { id = "workshop.gradle.buildtimelogger", version = "unspecified" }
 
 [bundles]
 compose-base = [ "androidx-ui", "androidx-material3" ]

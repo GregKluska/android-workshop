@@ -14,11 +14,6 @@ internal fun Project.configureAndroidCommon(
             testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
         }
 
-        compileOptions {
-            sourceCompatibility = Versions.JAVA_VERSION
-            targetCompatibility = Versions.JAVA_VERSION
-        }
-
         configureKotlin()
     }
 }
