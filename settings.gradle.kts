@@ -28,8 +28,7 @@ enableFeaturePreview("TYPESAFE_PROJECT_ACCESSORS")
 include(":app")
 
 // Features
-include(":feature:animation")
+include(":feature:showcase")
 
 // Common
 include(":common:ui")
-

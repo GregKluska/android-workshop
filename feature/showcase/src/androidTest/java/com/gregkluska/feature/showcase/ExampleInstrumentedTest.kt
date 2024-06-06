@@ -1,4 +1,4 @@
-package com.gregkluska.feature.animation
+package com.gregkluska.feature.showcase
 
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4
@@ -19,6 +19,6 @@ class ExampleInstrumentedTest {
     fun useAppContext() {
         // Context of the app under test.
         val appContext = InstrumentationRegistry.getInstrumentation().targetContext
-        assertEquals("com.gregkluska.feature.animation.test", appContext.packageName)
+        assertEquals("com.gregkluska.feature.showcase.test", appContext.packageName)
     }
 }

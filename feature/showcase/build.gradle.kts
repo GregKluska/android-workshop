@@ -5,7 +5,7 @@ plugins {
 }
 
 android {
-    namespace = "com.gregkluska.feature.animation"
+    namespace = "com.gregkluska.feature.showcase"
 
     defaultConfig {
         consumerProguardFiles("consumer-rules.pro")

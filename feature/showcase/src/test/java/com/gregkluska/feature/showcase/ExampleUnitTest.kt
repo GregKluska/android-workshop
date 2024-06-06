@@ -1,4 +1,4 @@
-package com.gregkluska.feature.animation
+package com.gregkluska.feature.showcase
 
 import org.junit.Assert.assertEquals
 import org.junit.Test

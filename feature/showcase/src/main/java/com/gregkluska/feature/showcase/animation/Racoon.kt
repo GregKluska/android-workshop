@@ -1,4 +1,4 @@
-package com.gregkluska.feature.animation.pedro
+package com.gregkluska.feature.showcase.animation
 
 import androidx.annotation.FloatRange
 import androidx.compose.foundation.Image
@@ -9,9 +9,9 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.graphicsLayer
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.tooling.preview.Preview
-import com.gregkluska.feature.animation.R
-import com.gregkluska.feature.animation.pedro.RacoonDefaults.HEAD_DROP_MIN
-import com.gregkluska.feature.animation.pedro.RacoonDefaults.HEAD_DROP_SPAN
+import com.gregkluska.feature.showcase.R
+import com.gregkluska.feature.showcase.animation.RacoonDefaults.HEAD_DROP_MIN
+import com.gregkluska.feature.showcase.animation.RacoonDefaults.HEAD_DROP_SPAN
 
 // GK: Refactor
 
