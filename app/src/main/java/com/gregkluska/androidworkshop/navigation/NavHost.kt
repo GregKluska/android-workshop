@@ -3,15 +3,15 @@ package com.gregkluska.androidworkshop.navigation
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import com.gregkluska.androidworkshop.ui.AppState
-import com.gregkluska.feature.animation.navigation.AnimationRoute
-import com.gregkluska.feature.animation.navigation.animationScreen
+import com.gregkluska.feature.showcase.navigation.ShowcaseRoute
+import com.gregkluska.feature.showcase.navigation.showcaseScreen
 import androidx.navigation.compose.NavHost as AndroidXNavHost
 
 @Composable
 fun NavHost(
     modifier: Modifier = Modifier,
     appState: AppState,
-    startDestination: String = AnimationRoute
+    startDestination: String = ShowcaseRoute
 ) {
     val navController = appState.navController
     AndroidXNavHost(
@@ -19,6 +19,6 @@ fun NavHost(
         startDestination = startDestination,
         modifier = modifier,
     ) {
-        animationScreen()
+        showcaseScreen()
     }
 }

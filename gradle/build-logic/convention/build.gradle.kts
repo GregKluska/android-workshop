@@ -15,7 +15,6 @@ dependencies {
     compileOnly(libs.kotlin.gradlePlugin)
     compileOnly(libs.spotless.gradlePlugin)
     compileOnly(libs.detekt.gradlePlugin)
-    compileOnly(files(libs.javaClass.superclass.protectionDomain.codeSource.location))
 }
 
 tasks {

@@ -7,8 +7,9 @@ class JvmLibraryConventionPlugin : Plugin<Project> {
     override fun apply(target: Project) {
         with(target) {
             with(pluginManager) {
-                apply(libs.plugins.jetbrains.kotlin.jvm.get().pluginId)
+                apply(libs.findPlugin("jetbrains-kotlin-jvm").get().get().pluginId)
             }
+
             configureKotlin()
 //            configureSpotless()
         }

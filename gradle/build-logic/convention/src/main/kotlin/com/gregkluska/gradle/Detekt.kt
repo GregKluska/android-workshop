@@ -9,11 +9,11 @@ import org.gradle.kotlin.dsl.named
 
 internal fun Project.configureDetekt() {
     with(pluginManager) {
-        apply(libs.plugins.detekt.get().pluginId)
+        apply(libs.findPlugin("detekt").get().get().pluginId)
     }
 
     detekt {
-        toolVersion = libs.versions.detekt.get()
+        toolVersion = libs.findVersion("detekt").get().toString()
         config.setFrom("$rootDir/detekt.yml")
         buildUponDefaultConfig = true
         autoCorrect = true
@@ -26,7 +26,7 @@ internal fun Project.configureDetekt() {
     }
 
     dependencies {
-        add("detektPlugins", libs.detekt.formatting)
+        add("detektPlugins", libs.findLibrary("detekt-formatting").get())
     }
 }
 

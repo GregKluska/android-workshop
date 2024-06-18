@@ -1,16 +1,16 @@
 [versions]
-agp = "8.4.1"
+agp = "8.5.0"
 kotlin = "2.0.0"
 ktlint = "1.2.1"
 coreKtx = "1.13.1"
 junit = "4.13.2"
 junitVersion = "1.1.5"
 espressoCore = "3.5.1"
-lifecycleRuntimeKtx = "2.8.1"
+lifecycleRuntimeKtx = "2.8.2"
 activityCompose = "1.9.0"
 navigation-compose = "2.7.7"
 hilt-navigation-compose = "1.2.0"
-compose-bom = "2024.05.00"
+compose-bom = "2024.06.00"
 spotless = "6.25.0"
 detekt = "1.23.6"
 appcompat = "1.7.0"
@@ -72,7 +72,6 @@ workshop-android-library = { id = "workshop.gradle.android.library", version = "
 workshop-android-library-compose = { id = "workshop.gradle.android.library.compose", version = "unspecified" }
 workshop-android-hilt = { id = "workshop.gradle.android.hilt", version = "unspecified" }
 workshop-jvm-library = { id = "workshop.gradle.jvm.library", version = "unspecified" }
-workshop-buildtimelogger = { id = "workshop.gradle.buildtimelogger", version = "unspecified" }
 
 [bundles]
 compose-base = [ "androidx-ui", "androidx-material3" ]
